@@ -21,6 +21,7 @@ class Base:
         print(self.hangman)
 
 
+# основная игра - "тяжелый" уровень
 class Game(Base):
     def game_game(self):
         self.display()
@@ -63,6 +64,7 @@ class Game(Base):
                 return False
 
 
+# легкий уровень
 class EasyGame(Game):
     def game_game(self):
         word_length = len(self.word)
